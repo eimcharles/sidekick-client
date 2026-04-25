@@ -1,8 +1,20 @@
 {
   "name": "sidekick-client",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
+  "author": "Charles Eimer <ceimer@me.com>",
+  "homepage": "https://github.com/eimcharles/sidekick-client#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eimcharles/sidekick-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eimcharles/sidekick-client/issues"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
