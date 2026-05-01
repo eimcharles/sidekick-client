@@ -2,6 +2,7 @@
   "name": "sidekick-client",
   "private": false,
   "version": "1.0.0",
+  "packageManager": "npm@11.11.0",
   "type": "module",
   "author": "Charles Eimer <ceimer@me.com>",
   "homepage": "https://github.com/eimcharles/sidekick-client#readme",
