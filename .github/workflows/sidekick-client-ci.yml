@@ -43,3 +43,12 @@ jobs:
           tags: |
             eimc/sidekick-client:latest
             eimc/sidekick-client:${{ github.sha }}
+
+      - name: Trigger Sidekick-Project CD Pipeline for Deployment
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          curl -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: token ${{ secrets.SIDEKICK_PROJECT_DISPATCH_TOKEN }}" \
+            https://api.github.com/repos/eimcharles/sidekick-project/dispatches \
+            -d '{"event_type": "client_updated"}'
