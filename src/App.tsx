@@ -1,5 +1,9 @@
+import LoginPage from "./features/auth/components/login/LoginPage";
+
 function App() {
-  return;
+  return (
+    <LoginPage/>
+  );
 }
 
 export default App;
