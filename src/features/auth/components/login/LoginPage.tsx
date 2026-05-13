@@ -7,12 +7,12 @@ const LoginPage = () => {
   return (
     <main className="flex h-screen w-full overflow-hidden">
       {/* Left Side*/}
-      <section className="flex flex-col w-full lg:w-[40%] overflow-y-auto">
+      <section className="flex flex-col w-full lg:w-[35%] overflow-y-auto">
         <LoginForm/>
         <Footer/>
       </section>
       {/* Right Side*/}
-      <section className="hidden lg:block lg:w-[60%] h-full">
+      <section className="hidden lg:block lg:w-[65%] h-full">
         <LoginHero src={Hero}/>
       </section>
     </main>
